@@ -27,95 +27,11 @@
         }
 
         body {
-            background-color: #f5f5f5;
+            background-color: #f5f5f500;
             color: var(--text-color);
             overflow-x: hidden;
         }
 
-        /* Loading Animation */
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--primary-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 1s ease-out;
-        }
-
-        .loading-slideshow {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .loading-slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .loading-slide.active {
-            opacity: 1;
-        }
-
-        .loading-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 2;
-            color: white;
-        }
-
-        .logo {
-            width: 150px;
-            font-family: 'Lobster', cursive;
-
-            height: 150px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-
-        .loading-bar {
-            width: 200px;
-            height: 4px;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 2px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .loading-progress {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 0%;
-            background-color: var(--accent-color);
-            animation: loading 3s ease-in-out forwards;
-        }
-
-        @keyframes loading {
-            0% { width: 0%; }
-            100% { width: 100%; }
-        }
 
         /* Navigation */
         header {
@@ -1448,26 +1364,12 @@
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-slideshow">
-            <div class="loading-slide active" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
-            <div class="loading-slide" style="background-image: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
-            <div class="loading-slide" style="background-image: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
-        </div>
-        
-        <div class="loading-content">
-       <h1>GOZEL....</h1>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
+  
 
     <!-- Header -->
     <header>
         <nav>
- <h1 style="font-family: 'Lobster', cursive; color:#3b5998;">GOZEL</h1>
+ <h1 style="font-family: 'Amiri', serif; /* أو 'Lateef', 'Scheherazade' */ color:#3b5998;">GOZEL</h1>
             
             <ul class="nav-links">
                 <li><a href="#">hOME</a></li>
@@ -1495,7 +1397,7 @@
     <section class="hero">
         <h1>Your style expresses your personality </h1>
         <p>  Discover our latest fashion collections and stand out with an elegant and modern style that suits all occasions. </p>
-        <button class="hero-btn" onclick="window.location.href='#categories'">Shop Naw</button>
+        <button class="hero-btn" onclick="window.location.href='#categories'" style="background: #1a252f;">Shop Naw</button>
     </section>
 
     <!-- Categories Section -->
@@ -1697,23 +1599,7 @@ I ALSO USED A LIGHT GRAY TONE CLOSE TO WHITE TO ADD BALANCE AND SUSTLE ELEGANCE 
 OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY MAKING IT VERSATILE AND SUITABLE FOR LISE ACROSS BOTH DIGITAL AND PRINT MEDIA
 </p>
 <p>
-وصف تصميم هوية لبراند ملابس محلي
-
-قمت بتصميم لوجو يعكس هوية بصرية ترتكز على البساطة، والأناقة، والثقة. ويعبر عن روح البراند المحلى للملابس بطريقة عصرية وواضحة.
-
-اعتمدت في التصميم على أسلوب بسيط ونظيف يعزز من وضوح العلامة التجارية.
-
-ويساعد في ترسيخها في ذهن الجمهور بسهولة.
-
-بالنسبة للألوان، استخدمت اللون السماوي الهادي ليعبر عن الراحة والانفتاح.
-
-مع اللون الكحلى العامة جداً القريب من الأسود لإضفاء لمسة من الاحتراف والرقى.
-
-كما أضفت لون رمادي فاتح قريب من الأبيض لإحداث توازن بصري
-
-ويضفي لمسة من الأناقة الهادئة.
-
-التكوين العام للوجو يوازن بين الطابع العصري والوضوح البصري. مما يجعله مناسباً للاستخدام على مختلف المنصات الرقمية والمطبوعة.</p>
+</p>
                 
                 
                 <div class="social-icons">
@@ -1797,7 +1683,7 @@ OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY
                         <textarea id="message" class="form-control" required></textarea>
                     </div>
                     
-                    <button type="submit" class="submit-btn">Send Massge </button>
+                    <button type="submit" class="submit-btn" style="background: #1a252f;">Send Massge </button>
                 </form>
             </div>
         </div>
@@ -1809,7 +1695,7 @@ OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY
         <p>Get the latest offers via your email        </p>
         <form class="newsletter-form">
             <input type="email" placeholder="أدخل بريدك الإلكتروني" class="newsletter-input" required>
-            <button type="submit" class="newsletter-btn">Contact</button>
+            <button type="submit" class="newsletter-btn" style="background: #263644;">Contact</button>
         </form>
     </section>
 
@@ -1837,18 +1723,18 @@ OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY
             </div>
             
             <div class="footer-col">
-                <h3>خدمة العملاء</h3>
+                <h3>Custumer service</h3>
                 <ul class="footer-links">
-                    <li><a href="#">حالة الطلب</a></li>
-                    <li><a href="#">سياسة الإرجاع</a></li>
-                    <li><a href="#">وسائل الدفع</a></li>
-                    <li><a href="#">الأسئلة الشائعة</a></li>
-                    <li><a href="#">دليل المقاسات</a></li>
+                    <li><a href="#">Request status</a></li>
+                    <li><a href="#"> Return Policy</a></li>
+                    <li><a href="#">Payment methods</a></li>
+                    <li><a href="#"> Question</a></li>
+                    <li><a href="#">Sizes </a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
-                <h3>تواصل معنا</h3>
+                <h3>Contact</h3>
                 <p><i class="fas fa-map-marker-alt"></i>Cairo -  Egypt</p>
                 <p><i class="fas fa-phone"></i><a href='tel:201044026411'>+201044026411</a></p>
                 <p><i class="fas fa-clock"></i>24 hours  </p>
@@ -1891,7 +1777,7 @@ OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY
                     <span>25 p.n</span>
                 </div>
             </div>
-            <button class="checkout-btn"><i class="fas fa-credit-card"></i>Yauh</button>
+            <button class="checkout-btn" style="background: #1a252f;"><i class="fas fa-credit-card"></i>Done</button>
         </div>
     </div>
 
@@ -1928,14 +1814,14 @@ OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY
                     <label for="checkout-coupon"> (اختياري) Code</label>
                     <div class="coupon-group">
                         <input type="text" id="checkout-coupon" class="coupon-input">
-                        <button type="button" class="apply-coupon">Yauh</button>
+                        <button type="button" class="apply-coupon">done</button>
                     </div>
                 </div>
             </form>
         </div>
         
         <div class="checkout-footer">
-            <button type="submit" form="checkoutForm" class="confirm-btn">Yauh Shopping </button>
+            <button type="submit" form="checkoutForm" class="confirm-btn">Done shopping </button>
         </div>
     </div>
 
@@ -1943,33 +1829,7 @@ OVERALL, THE LOGO STRIKES A BALANCE BETWEEN MODERN AESTHETICS AND VISUAL CLARITY
     <div class="overlay"></div>
 
     <script>
-        // Loading Screen
-        window.addEventListener('load', function() {
-            // Slideshow for loading screen
-            const slides = document.querySelectorAll('.loading-slide');
-            let currentSlide = 0;
-            
-            function showSlide(n) {
-                slides.forEach(slide => slide.classList.remove('active'));
-                slides[n].classList.add('active');
-            }
-            
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % slides.length;
-                showSlide(currentSlide);
-            }
-            
-            // Change slide every 2 seconds
-            setInterval(nextSlide, 2000);
-            
-            setTimeout(function() {
-                document.querySelector('.loading-screen').style.opacity = '0';
-                setTimeout(function() {
-                    document.querySelector('.loading-screen').style.display = 'none';
-                }, 1000);
-            }, 3000);
-        });
-
+        
         // Mobile Menu Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
