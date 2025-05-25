@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التحميل</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+        
+        .loading-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <!-- يمكنك استبدال رابط الفيديو بفيديوك الخاص -->
+            <source src="background.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="loading-content">
+    </div>
+
+    <script>
+        // الانتقال إلى الصفحة التالية بعد 5 ثواني
+        setTimeout(function() {
+            window.location.href = "GOZEL.html";
+        }, 5000);
+        
+        // تشغيل الفيديو تلقائياً (لضمان التشغيل على جميع المتصفحات)
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            video.play().catch(e => console.log('فشل التشغيل التلقائي:', e));
+        });
+    </script>
+</body>
+</html>
